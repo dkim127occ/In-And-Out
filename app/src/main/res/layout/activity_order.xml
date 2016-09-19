@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.orangecoastcollege.cs273.dkim127.inandout.OrderActivity"
+    android:columnCount="2"
+    android:background="@drawable/order_background"
+    android:rowCount="10">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/order_query"
+        android:id="@+id/textView2"
+        android:layout_column="0"
+        android:layout_gravity="center_horizontal"
+        android:layout_row="0"
+        android:layout_columnSpan="2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/double_double"
+        android:id="@+id/doubleDoubleTextView"
+        android:layout_column="0"
+        android:layout_row="1"
+        android:layout_columnSpan="1"
+        android:layout_rowSpan="1"
+        android:layout_gravity="right"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/cheeseburger"
+        android:id="@+id/cheeseburgerTextView"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:layout_columnSpan="1"
+        android:layout_rowSpan="1"
+        android:layout_gravity="right"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/french_fries"
+        android:id="@+id/frenchFriesTextView"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:layout_columnSpan="1"
+        android:layout_rowSpan="1"
+        android:layout_gravity="right"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/shakes"
+        android:id="@+id/shakesTextView"
+        android:layout_row="4"
+        android:layout_column="0"
+        android:layout_columnSpan="1"
+        android:layout_rowSpan="1"
+        android:layout_gravity="right"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/fountain_drinks"
+        android:id="@+id/textView6"
+        android:layout_row="5"
+        android:layout_column="0"
+        android:layout_columnSpan="1"
+        android:layout_rowSpan="1"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/drink_small"
+        android:id="@+id/drinkSmallTextView"
+        android:layout_row="6"
+        android:layout_column="0"
+        android:layout_columnSpan="1"
+        android:layout_rowSpan="1"
+        android:layout_gravity="right"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/drink_medium"
+        android:id="@+id/drinkMediumTextView"
+        android:layout_row="7"
+        android:layout_column="0"
+        android:layout_columnSpan="1"
+        android:layout_rowSpan="1"
+        android:layout_gravity="right"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/drink_large"
+        android:id="@+id/drinkLargeTextView"
+        android:layout_row="8"
+        android:layout_column="0"
+        android:layout_columnSpan="1"
+        android:layout_rowSpan="1"
+        android:layout_gravity="right"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/doubleDoubleEditText"
+        android:layout_column="1"
+        android:layout_row="1"
+        android:ems="6"
+        android:maxLength="2"
+        android:layout_columnSpan="1"
+        android:layout_rowSpan="1"
+        android:layout_gravity="left"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="6"
+        android:id="@+id/cheeseburgerEditText"
+        android:layout_row="2"
+        android:layout_column="1"
+        android:maxLength="2"
+        android:layout_columnSpan="1"
+        android:layout_rowSpan="1"
+        android:layout_gravity="left"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="6"
+        android:id="@+id/frenchFriesEditText"
+        android:layout_column="1"
+        android:layout_row="3"
+        android:maxLength="2"
+        android:layout_columnSpan="1"
+        android:layout_rowSpan="1"
+        android:layout_gravity="left"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="6"
+        android:id="@+id/shakesEditText"
+        android:layout_column="1"
+        android:layout_row="4"
+        android:maxLength="2"
+        android:layout_columnSpan="1"
+        android:layout_rowSpan="1"
+        android:layout_gravity="left"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="6"
+        android:id="@+id/drinkSmallEditText"
+        android:maxLength="2"
+        android:layout_column="1"
+        android:layout_row="6"
+        android:layout_columnSpan="1"
+        android:layout_rowSpan="1"
+        android:layout_gravity="left"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="6"
+        android:id="@+id/drinkMediumEditText"
+        android:layout_column="1"
+        android:layout_row="7"
+        android:maxLength="2"
+        android:layout_columnSpan="1"
+        android:layout_rowSpan="1"
+        android:layout_gravity="left"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="6"
+        android:id="@+id/drinkLargeEditText"
+        android:layout_column="1"
+        android:layout_row="8"
+        android:maxLength="2"
+        android:layout_columnSpan="1"
+        android:layout_rowSpan="1"
+        android:layout_gravity="left"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/place_order"
+        android:id="@+id/placeOrderButton"
+        android:layout_row="9"
+        android:layout_column="1"
+        android:layout_gravity="left"
+        android:layout_columnSpan="1"
+        android:layout_rowSpan="1"
+        android:onClick="startSummary"/>
+
+</GridLayout>
